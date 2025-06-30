@@ -1,0 +1,110 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;  /* Use a cleaner font */
+    padding: 50px;
+    margin: 0;
+    background-color: #f4f4f4; /* Subtle background color for overall page */
+}
+
+/* Semi-transparent Overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /* Increased opacity for stronger overlay */
+    z-index: -1;
+}
+
+/* Container Style */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    background: url('../images/login_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    box-shadow: 0 7px 29px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;  /* Add subtle rounded corners */
+    /* background-blur: 10px; Optional: Add blur effect to background */
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+/* Label Styling */
+label {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input Fields */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color: #fff;
+}
+
+/* Placeholder Text Styling */
+input::placeholder, textarea::placeholder {
+    color: #999;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7043; /* Soft orange for buttons */
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #f4511e; /* Darken on hover */
+}
+
+/* Form Header Styling */
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}

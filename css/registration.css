@@ -1,0 +1,135 @@
+/* === Reset & Base === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('../images/login_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    padding: 20px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+}
+
+/* === Container === */
+.registration-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid rgba(204, 94, 16, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* === Heading === */
+h2 {
+    text-align: center;
+    text-shadow: 1px 1px 1px crimson;
+    color: rgba(204, 94, 16, 0.9);
+    margin-bottom: 20px;
+}
+
+/* === Form Fields === */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgba(204, 94, 16, 0.9);
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #cc5e10;
+    outline: none;
+}
+
+/* === Button === */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(204, 94, 16, 0.9);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(204, 94, 16, 1);
+}
+
+/* === Alert Messages === */
+.alert {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #eafaf1;
+    color: #2e7d32;
+    border: 1px solid #c5e1a5;
+}
+
+.alert-danger {
+    background-color: #fbeaea;
+    color: #c62828;
+    border: 1px solid #f44336;
+}
+
+/* === Links & Text === */
+a {
+    color: rgba(204, 94, 16, 0.9);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+    color: #333;
+}
