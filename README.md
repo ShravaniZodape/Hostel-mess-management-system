@@ -36,7 +36,6 @@ A full-stack web application to streamline hostel mess operations — including 
 |------------|-----------|-----------|
 | ![login](screenshots/login.png) | ![dashboard](screenshots/dashboard.png) | ![analytics](screenshots/powerbi.png) |
 
-> Add your screenshots in a `screenshots/` folder and update links above.
 
 ---
 
